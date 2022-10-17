@@ -1,40 +1,62 @@
-body {
-    margin: 0;
-    font-family: 'open-Sans', sans-serif;
-    color : rgb (44,41,44);
-    background-color: rgb(247,239,247);
-}
-  /* jj */
-#main-header {
-    background-color: rgb(140,0,255);
-    color: white;
-    padding: 2rem 5%;    /* to give header responsive */
+#active-game {
     text-align: center;
-}
+    margin: 2rem 0 5rem 0;
+    /* display: none;    */
+} /* when required */ 
 
-.btn {
-    font: inherit;
-    padding: 0.5rem 1.5rem;
-    background-color: rgb(140,0,255);
-    border: 1px solid rgb(140,0,255);
+#game-over {
+    width: 90%;
+    max-width: 40rem;
+    margin: auto;
+    padding: 1rem 2rem;
+    background-color: rgb(50,5,87);
     color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     border-radius: 4px;
+    display: none;
+} /* when required */ 
+
+#game-over h2 {
+    font-size: 2.5rem;
+    margin: 0.5rem;
+    
+}
+
+#active-player-name {
+    font-weight: bold;
+    color: rgb(50,5,78);
+}
+
+#game-board {
+    list-style: none;
+    margin: 1rem 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns:repeat(3, 6rem);     /* instead of 6rem 6rem 6rem */
+    grid-template-rows:repeat(3, 6rem);     /* instead of 6rem 6rem 6rem */
+    justify-content: center;
+    gap: 0.5rem;  /* alternatively we can do it in li margin */
+}
+
+
+#game-board li {
+    background-color: rgb(215,187,247);
+    border-radius: 2px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
-.btn-alt {
-    background-color: transparent;
-    border-color: transparent;
-    color: rgb(140,0,255);
+#game-board li:hover {
+    background-color: rgb(112,13,204);
+
 }
 
-.btn:hover {
-    background-color: rgb(84, 5, 148);
-    border-color: rgb(88, 4, 156);
+#game-board li.disabled {
+    background-color: rgb(112,13,204);
+    cursor: default;
+    color: white;
 }
-
-.btn-alt:hover {
-    background-color: rgb(208, 206, 210) ;
-    border-color: transparent;
-}
-
