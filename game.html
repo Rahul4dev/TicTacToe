@@ -7,6 +7,7 @@
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="styles/game.css">
     <link rel="stylesheet" href="styles/overlays.css">
+    <link rel="stylesheet" href="styles/config.css">
 </head>
 <body>
     <div id="backdrop"></div>
@@ -14,10 +15,10 @@
         <h1>Play Tic Tac Toe</h1>
         <p>Built with HTML, CSS, JavaScript and With Love! </p>
     </header>
-    <aside class="modal" id="">     <!-- For overlay after saving the player so we use Class style-->
+    <aside class="modal" id="config-overlay">     <!-- For overlay after saving the player so we use Class style-->
         <h2>Choose Your Name</h2>
         <form >
-            <div>
+            <div class="form-control">
                 <label for="namePlayer">Player Name</label>
                 <input type="text" name="namePlayer" id="namePlayer"/>
             </div>
@@ -35,7 +36,7 @@
                     <article>
                         <h2>Player 1</h2>
                         <h3>PLAYER NAME</h3>
-                        <p>O</p>                <!-- -->
+                        <p class="playerSymbol">O</p>                <!-- -->
                         <button class="btn btn-alt">Edit</button>  <!-- // player edit data -->
                         
                     </article>
@@ -44,7 +45,7 @@
                     <article>
                         <h2>Player 2</h2>
                         <h3>PLAYER NAME</h3>
-                        <p>X</p>
+                        <p class="playerSymbol">X</p>
                         <button class="btn btn-alt">Edit</button>         <!-- // player edit data -->
                       
                     </article>
