@@ -2,6 +2,10 @@
 
 const playerConfigOverlayElement = document.getElementById('config-overlay');
 const backdropElement = document.getElementById('backdrop');
+const formElement = document.querySelector('form');
+const errorsOutputElement = document.getElementById('config-errors');
+
+
 
 const player1EditButtonElement = document.getElementById('player1Edit-btn');
 const player2EditButtonElement = document.getElementById('player2Edit-btn');
@@ -13,3 +17,5 @@ player2EditButtonElement.addEventListener('click',openPlayerConfig); // defined 
 
 cancelConfigBtnElement.addEventListener('click',closePlayerConfig); //
 backdropElement.addEventListener('click',closePlayerConfig); // close display of overlay 
+
+formElement.addEventListener('submit',savePlayerConfig);  // fn in config.js

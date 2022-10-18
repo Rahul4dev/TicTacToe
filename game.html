@@ -25,10 +25,11 @@
       <form>
         <div class="form-control">
           <label for="namePlayer">Player Name</label>
-          <input type="text" name="namePlayer" id="namePlayer" />
+          <input type="text" name="namePlayer" id="namePlayer" required/>
         </div>
+        <p id="config-errors"></p>
         <div>
-          <button type="button" class="btn btn-alt" id="cancel-config-btn">Cancel</button>
+          <button type="reset" class="btn btn-alt" id="cancel-config-btn">Cancel</button>
           <button type="submit" class="btn">Confirm</button>
         </div>
       </form>
