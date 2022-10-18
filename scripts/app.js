@@ -1,5 +1,18 @@
 // to reach out elements of HTML and store elements in constants for other JS files.
 
+let editedPlayer = 0;
+
+const players = [   // player names stored for multiple use
+    {
+        name: '',
+        symbol: 'X',
+    },
+    {
+        name: '',
+        symbol: 'O',
+    }
+];
+
 const playerConfigOverlayElement = document.getElementById('config-overlay');
 const backdropElement = document.getElementById('backdrop');
 const formElement = document.querySelector('form');
