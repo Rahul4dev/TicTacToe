@@ -23,7 +23,7 @@ function savePlayerConfig(event) {
     // save player name, validate and display config.
     event.preventDefault();  // it preventDefault behavior of browser event to send to server. This we want to execute here.
     const formData = new FormData(event.target); // blueprint fn for form data.
-    const enteredPlayerName = formData.get('namePlayer').trim(); // remove the  whitespace characters.
+    const enteredPlayerName = formData.get('playerName').trim(); // remove the  whitespace characters.
     // validation.. add required fields to form in HTML input field. and
 
     if (!enteredPlayerName) {  // NOT used instead of === "empty string"

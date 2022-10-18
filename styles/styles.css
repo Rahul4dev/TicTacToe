@@ -8,7 +8,7 @@ body {
 #main-header {
     background-color: rgb(140,0,255);
     color: white;
-    padding: 2rem 5%;    /* to give header responsive */
+    padding: 2rem 5%;    /* to make header responsive */
     text-align: center;
 }
 
@@ -29,11 +29,11 @@ body {
 }
 
 .btn:hover {
-    background-color: rgb(84, 5, 148);
-    border-color: rgb(88, 4, 156);
+    background-color: rgb(79,10,190);
+    border-color: rgb(79,10,190);
 }
 
 .btn-alt:hover {
-    background-color: rgb(208, 206, 210) ;
+    background-color: rgb(230, 201, 252) ;
     border-color: transparent;
 }
