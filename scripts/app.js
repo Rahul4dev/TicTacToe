@@ -6,15 +6,16 @@ const gameData = [
   
   let editedPlayer = 0;
   let activePlayer = 0;
+  let currentRound = 1;
   
   const players = [
     {
       name: '',
-      symbol: 'X'
+      symbol: 'X',
     },
     {
       name: '',
-      symbol: 'O'
+      symbol: 'O',
     },
   ];
   
@@ -24,7 +25,9 @@ const gameData = [
   const errorsOutputElement = document.getElementById('config-errors');
   const gameAreaElement = document.getElementById('active-game');
   const activePlayerNameElement = document.getElementById('active-player-name');
-  
+  const gameOverElement = document.getElementById('game-over');
+
+
   const editPlayer1BtnElement = document.getElementById('edit-player-1-btn');
   const editPlayer2BtnElement = document.getElementById('edit-player-2-btn');
   const cancelConfigBtnElement = document.getElementById('cancel-config-btn');
